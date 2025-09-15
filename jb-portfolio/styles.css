@@ -1,0 +1,23 @@
+/* Minimal portfolio styles */
+:root { --maxw: 1120px; --g: 1.2rem; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+img { max-width: 100%; display:block; border-radius: .5rem; }
+a { color: inherit; }
+.site-header, .site-footer { max-width: var(--maxw); margin: 0 auto; padding: 1rem; display:flex; align-items:center; justify-content:space-between; }
+.brand { text-decoration:none; font-size: 1.1rem; }
+.site-header nav a { text-decoration:none; margin-left:1rem; opacity:.85; }
+.site-header nav a.active, .site-header nav a:hover { opacity:1; }
+.hero { max-width: var(--maxw); margin: 2rem auto; padding: 2rem 1rem; border: 1px solid rgba(0,0,0,.08); border-radius: .75rem; }
+.cta-row { display:flex; gap:.8rem; margin-top: .8rem; }
+.button { display:inline-block; padding:.6rem 1rem; border:1px solid rgba(0,0,0,.2); border-radius:.5rem; text-decoration:none; }
+.button-ghost { background: transparent; }
+.projects { max-width: var(--maxw); margin: 2rem auto; padding: 0 1rem; }
+.grid { display:grid; gap: var(--g); grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
+.cards .card { text-decoration:none; border:1px solid rgba(0,0,0,.08); padding: .8rem; border-radius:.75rem; background:#fff; }
+.cards .card h3 { margin: .6rem 0 .3rem; }
+.page { max-width: var(--maxw); margin: 2rem auto; padding: 0 1rem; }
+.gallery { grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); }
+form { display:grid; gap:.6rem; max-width: 560px; }
+input, textarea { width:100%; padding:.6rem .7rem; border:1px solid rgba(0,0,0,.2); border-radius:.5rem; font: inherit; }
+button { padding:.6rem 1rem; border:1px solid rgba(0,0,0,.2); border-radius:.5rem; background:#fff; cursor:pointer; }

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram — Jonathan Bonamarte</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/"><strong>Jonathan</strong> Bonamarte</a>
+    <nav>
+      <a href="/#projects">Projects</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="active" href="/instagram.html">Instagram</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>Instagram Highlights</h1>
+    <p>Curated static grid. Replace images and captions in <code>/assets/instagram/</code>.</p>
+    <div class="grid gallery" data-lightbox>
+      <a href="/assets/instagram/ig-1.jpg"><img src="/assets/instagram/ig-1_thumb.jpg" alt="Instagram highlight 1"></a>
+      <a href="/assets/instagram/ig-2.jpg"><img src="/assets/instagram/ig-2_thumb.jpg" alt="Instagram highlight 2"></a>
+      <a href="/assets/instagram/ig-3.jpg"><img src="/assets/instagram/ig-3_thumb.jpg" alt="Instagram highlight 3"></a>
+      <a href="/assets/instagram/ig-4.jpg"><img src="/assets/instagram/ig-4_thumb.jpg" alt="Instagram highlight 4"></a>
+      <a href="/assets/instagram/ig-5.jpg"><img src="/assets/instagram/ig-5_thumb.jpg" alt="Instagram highlight 5"></a>
+      <a href="/assets/instagram/ig-6.jpg"><img src="/assets/instagram/ig-6_thumb.jpg" alt="Instagram highlight 6"></a>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jonathan Bonamarte</p>
+  </footer>
+  <script src="/scripts/lightbox.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

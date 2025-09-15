@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Jonathan Bonamarte</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/"><strong>Jonathan</strong> Bonamarte</a>
+    <nav>
+      <a href="/#projects">Projects</a>
+      <a href="/about.html">About</a>
+      <a class="active" href="/contact.html">Contact</a>
+      <a href="/instagram.html">Instagram</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>Contact</h1>
+    <p><strong>Email:</strong> <a href="mailto:hello@jonathanbonamarte.com">hello@jonathanbonamarte.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jonathanbonamarte/" target="_blank" rel="noopener">linkedin.com/in/jonathanbonamarte</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+18652087035">(865) 208‑7035</a></p>
+    <hr>
+    <h2>Message</h2>
+    <p>This site is static (GitHub Pages). To receive form submissions, connect a service like Formspree or Netlify Forms. A starter form is below; replace <code>YOUR_FORM_ID</code> with your ID.</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>Name <input name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Message <textarea name="message" rows="6" required></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jonathan Bonamarte</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
